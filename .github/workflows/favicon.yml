@@ -1,0 +1,46 @@
+# «أيقونة الموقع»: تنزيل أيقونة سوريا 24 من بلوجر وحفظها في جذر النطاق
+# تعمل عند تعديل هذا الملف أو السكربت، أو يدوياً من تبويب Actions (مثلاً بعد تغيير الشعار)
+name: أيقونة الموقع
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/favicon.yml'
+      - '.github/scripts/favicon.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: favicon
+  cancel-in-progress: false
+
+jobs:
+  favicon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: تثبيت Pillow
+        run: pip install --quiet pillow
+
+      - name: توليد الأيقونات
+        run: python .github/scripts/favicon.py
+
+      - name: حفظ التغييرات إن وُجدت
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add favicon.ico icon-192.png apple-touch-icon.png
+          if git diff --cached --quiet; then
+            echo "لا تغيير في الأيقونات"
+          else
+            git commit -m "تحديث أيقونة الموقع"
+            git push
+          fi

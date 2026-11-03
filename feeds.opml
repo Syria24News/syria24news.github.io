@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- كل خلاصات سوريا 24 في ملف واحد: يستورده القارئ (Inoreader / Feedly) فيشترك في الخلاصة الرئيسية وكل الأقسام دفعة واحدة -->
+<opml version="2.0">
+  <head>
+    <title>سوريا 24 — كل الخلاصات</title>
+    <ownerName>سوريا 24</ownerName>
+  </head>
+  <body>
+    <outline text="سوريا 24 — أخبار سوريا والعالم" title="سوريا 24 — أخبار سوريا والعالم" type="rss" xmlUrl="https://syria24news.github.io/s24news-assets/feed.xml" htmlUrl="https://www.syria24.news/"/>
+    <outline text="أقسام سوريا 24" title="أقسام سوريا 24">
+      <outline text="أخبار سوريا" title="أخبار سوريا" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*Sy?alt=rss" htmlUrl="https://www.syria24.news/search/label/*Sy"/>
+      <outline text="الشأن المحلي" title="الشأن المحلي" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*L?alt=rss" htmlUrl="https://www.syria24.news/search/label/*L"/>
+      <outline text="سياسة" title="سياسة" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*P?alt=rss" htmlUrl="https://www.syria24.news/search/label/*P"/>
+      <outline text="سوريا والعالم" title="سوريا والعالم" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*SW?alt=rss" htmlUrl="https://www.syria24.news/search/label/*SW"/>
+      <outline text="العالم العربي" title="العالم العربي" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*AN?alt=rss" htmlUrl="https://www.syria24.news/search/label/*AN"/>
+      <outline text="أخبار العالم" title="أخبار العالم" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*WN?alt=rss" htmlUrl="https://www.syria24.news/search/label/*WN"/>
+      <outline text="اقتصاد" title="اقتصاد" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*E?alt=rss" htmlUrl="https://www.syria24.news/search/label/*E"/>
+      <outline text="الرياضة والألعاب" title="الرياضة والألعاب" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*S?alt=rss" htmlUrl="https://www.syria24.news/search/label/*S"/>
+      <outline text="منوعات" title="منوعات" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*M?alt=rss" htmlUrl="https://www.syria24.news/search/label/*M"/>
+      <outline text="تقارير وتحقيقات" title="تقارير وتحقيقات" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*Z?alt=rss" htmlUrl="https://www.syria24.news/search/label/*Z"/>
+      <outline text="الصحيفة الثقافية" title="الصحيفة الثقافية" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*C?alt=rss" htmlUrl="https://www.syria24.news/search/label/*C"/>
+      <outline text="تربية وتعليم" title="تربية وتعليم" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*D?alt=rss" htmlUrl="https://www.syria24.news/search/label/*D"/>
+      <outline text="الصحة والعلوم" title="الصحة والعلوم" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*H?alt=rss" htmlUrl="https://www.syria24.news/search/label/*H"/>
+      <outline text="علوم وتكنولوجيا" title="علوم وتكنولوجيا" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*T?alt=rss" htmlUrl="https://www.syria24.news/search/label/*T"/>
+      <outline text="وثائق ومذكرات" title="وثائق ومذكرات" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*U?alt=rss" htmlUrl="https://www.syria24.news/search/label/*U"/>
+      <outline text="أفلام وثائقية" title="أفلام وثائقية" type="rss" xmlUrl="https://www.syria24.news/feeds/posts/default/-/*DF?alt=rss" htmlUrl="https://www.syria24.news/search/label/*DF"/>
+    </outline>
+  </body>
+</opml>
